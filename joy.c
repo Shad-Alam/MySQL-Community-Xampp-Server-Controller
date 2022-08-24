@@ -1,43 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-void init(){
-	printf("--------------------------------------------\n");
-	printf("--------------------------------------------\n");
-	printf("::           Mysql Community Server       ::\n");
-	printf("--------------------------------------------\n");
-	printf("  >> Press 1 for start mysql\n");
-	printf("  >> Press 2 for stop  mysql\n");
-	printf("--------------------------------------------\n");
-	printf("--------------------------------------------\n");
-	printf("::           Xampp Server                 ::\n");
-	printf("--------------------------------------------\n");
-	printf("--------------------------------------------\n");
-	printf("  >> Press 3 for start xampp\n");
-	printf("  >> Press 4 for stop  xampp\n");
-	printf("  >> Press 5 for view  xampp control panel\n");
-	printf("--------------------------------------------\n");
-	printf("--------------------------------------------\n");
-	printf("  >> Press 0 for Quit\n");
-	printf("  >> Press c for Clear Screen\n");
-	printf("  >> Press m for Menu\n");
-	printf("--------------------------------------------\n");
-}
-
-void mysqlStarter(){
-	system("sudo service mysql start");
-}
-
-void mysqlStoper(){
-	system("sudo service mysql stop");
-}
-
-void xamppStarter(){
-	system("sudo /opt/lampp/lampp start");
-}
-void xamppStoper(){
-	system("sudo /opt/lampp/lampp stop");
-}
+#include <joy.h>
 
 int main(){	
 	init();
