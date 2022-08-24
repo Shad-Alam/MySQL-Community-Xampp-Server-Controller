@@ -18,20 +18,50 @@ void init(){
 	printf("  >> Press 5 for view  xampp control panel\n");
 	printf("--------------------------------------------\n");
 	printf("--------------------------------------------\n");
+	printf("  >> Press 0 for Quit\n");
+	printf("--------------------------------------------\n");
+}
+
+void mysqlStarter(){
+	system("sudo service mysql start");
+}
+
+void mysqlStoper(){
+	system("sudo service mysql stop");
+}
+
+void xamppStarter(){
+	system("sudo /opt/lampp/lampp start");
+}
+void xamppStoper(){
+	system("sudo /opt/lampp/lampp stop");
 }
 
 int main(){
 	init();
 	
-	int n; scanf("%d", &n);
 	
-	if(n==3){
-		system("sudo service mysql stop");
-		system("sudo /opt/lampp/lampp start");
-	}else if(n==4){
-		system("sudo /opt/lampp/lampp stop");
-	}else if(n==5){
-		system("sudo /opt/lampp/manager-linux-x64.run");
+	int n; 
+	
+	while(1){
+		printf("\nEnter number : ");
+		scanf("%d", &n);
+		
+		if(n==0){
+			break;
+		}else if(n==1){
+			xamppStoper(), mysqlStarter();
+			printf("\nMYSQL: Starting MySQL Server...running.\n\n");
+		}else if(n==2){
+			mysqlStoper();
+			printf("\nMYSQL: Stoping MySQL Server...not running.\n\n");
+		}else if(n==3){
+			mysqlStoper(), xamppStarter();
+		}else if(n==4){
+			xamppStoper();
+		}else if(n==5){
+			system("sudo /opt/lampp/manager-linux-x64.run");
+		}
 	}
 		
 	return 0;
