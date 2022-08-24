@@ -1,2 +1,2 @@
 all:
-	gcc -I. joy.h joy.c -o MysqlCommunityXamppController
+	gcc -I. joy.h joy.c -o Joy
