@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void initi(){
+void init(){
 	printf("--------------------------------------------\n");
 	printf("--------------------------------------------\n");
 	printf("::           Mysql Community Server       ::\n");
@@ -26,6 +26,7 @@ int main(){
 	int n; scanf("%d", &n);
 	
 	if(n==3){
+		system("sudo service mysql stop");
 		system("sudo /opt/lampp/lampp start");
 	}else if(n==4){
 		system("sudo /opt/lampp/lampp stop");
