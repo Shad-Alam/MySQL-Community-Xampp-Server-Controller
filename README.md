@@ -11,11 +11,7 @@
 
 :point_right:     **How to run this project?**
 
-First install, <br/>
-- sudo apt install geany <br/>
-- sudo apt install scrcpy <br/>
-
-Now, open terminal and run <br/> 
+Open terminal and run <br/> 
   - git clone https://github.com/Shad-Alam/MySQL-Community-Xampp-Server-Controller.git <br/> 
   - cd MySQL-Community-Xampp-Server-Controller <br/> 
   - make <br/> 
