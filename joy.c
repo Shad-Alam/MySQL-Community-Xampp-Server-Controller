@@ -19,6 +19,7 @@ int main(){
 		
 		if(n=='1'){
 			xamppStoper(), mysqlStarter();
+		
 			printf("\nMYSQL: Starting MySQL Server...running.\n\n");
 		}else if(n=='2'){
 			mysqlStoper();
@@ -28,11 +29,14 @@ int main(){
 		}else if(n=='4'){
 			xamppStoper();
 		}else if(n=='5'){
-			system("sudo /opt/lampp/manager-linux-x64.run");
+			xamppControlPanel();
 		}else if(n=='c'){
 			system("clear");
 		}else if(n=='m'){
 			init();
+		}else{
+			// error message
+			// invalid command
 		}
 	}
 		

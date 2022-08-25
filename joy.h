@@ -40,5 +40,9 @@ void xamppStoper(){
 	system("sudo /opt/lampp/lampp stop");
 }
 
+void xamppControlPanel(){
+	system("sudo /opt/lampp/manager-linux-x64.run");
+}
+
 
 
