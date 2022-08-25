@@ -15,6 +15,6 @@
   - cd MySQL-Community-Xampp-Server-Controller <br/> 
   - make <br/> 
 
-## Project video presentation: https:
+## Project presentation: https:
 
 * Released: August 25, 2022
