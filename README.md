@@ -10,8 +10,7 @@
 - Main purpose of this project, easily handle those two tasks in Linux. <br/>
 
 :point_right:     **How to run this project?**
-
-Open terminal and run <br/> 
+ <br/> 
   - git clone https://github.com/Shad-Alam/MySQL-Community-Xampp-Server-Controller.git <br/> 
   - cd MySQL-Community-Xampp-Server-Controller <br/> 
   - make <br/> 
