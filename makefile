@@ -1,2 +1,2 @@
 all:
-	gcc -I. joy.h joy.c -o Joy
+	gcc -I. message.h shad.h joy.c -o Joy && ./Joy

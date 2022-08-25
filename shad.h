@@ -44,5 +44,8 @@ void xamppControlPanel(){
 	system("sudo /opt/lampp/manager-linux-x64.run");
 }
 
+void clear(){
+	system("clear");
+}
 
 

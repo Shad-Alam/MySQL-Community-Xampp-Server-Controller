@@ -1,29 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <joy.h>
+#include <stdbool.h>
+#include <message.h>
+#include <shad.h>
 
 int main(){	
-	init();
-	
-	char n;
+	init(); char n; bool port = false;
 	while(1){
-		printf("\n >> press : ");
-		char j[3];
+		printf("\n >> press : "); char j[1333]; 
 		fgets(j,sizeof(j), stdin);
-		
-		n = j[0];
 				
-		if(n=='0'){
-			break;
-		} 
+		n = j[0]; if(n=='0'){ break;} 
 		
 		if(n=='1'){
-			xamppStoper(), mysqlStarter();
-		
-			printf("\nMYSQL: Starting MySQL Server...running.\n\n");
+			xamppStoper(), mysqlStarter(), M1;
 		}else if(n=='2'){
-			mysqlStoper();
-			printf("\nMYSQL: Stoping MySQL Server...not running.\n\n");
+			mysqlStoper(), M2;
 		}else if(n=='3'){
 			mysqlStoper(), xamppStarter();
 		}else if(n=='4'){
@@ -31,13 +23,17 @@ int main(){
 		}else if(n=='5'){
 			xamppControlPanel();
 		}else if(n=='c'){
-			system("clear");
+			clear();
 		}else if(n=='m'){
 			init();
 		}else{
-			// error message
-			// invalid command
+			M3, port = true; 
+			break;
 		}
+	}
+	
+	if(port){ 
+		main();
 	}
 		
 	return 0;
