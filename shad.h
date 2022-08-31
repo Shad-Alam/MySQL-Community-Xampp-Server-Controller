@@ -10,7 +10,7 @@ void init(){
 	printf("  >> Press 2 for STOP  mysql\n");
 	printf("--------------------------------------------\n");
 	printf("--------------------------------------------\n");
-	printf("::           Xampp Server                 ::\n");
+	printf("::              Xampp Server              ::\n");
 	printf("--------------------------------------------\n");
 	printf("--------------------------------------------\n");
 	printf("  >> Press 3 for START xampp\n");
@@ -18,9 +18,13 @@ void init(){
 	printf("  >> Press 5 for VIEW  xampp control panel\n");
 	printf("--------------------------------------------\n");
 	printf("--------------------------------------------\n");
+	printf("::             Display Control            ::\n");
+	printf("--------------------------------------------\n");
+	printf("--------------------------------------------\n");
 	printf("  >> Press c for CLEAR Screen\n");
 	printf("  >> Press m for MENU\n");
 	printf("  >> Press 0 for EXIT\n");
+	printf("--------------------------------------------\n");
 	printf("--------------------------------------------\n");
 }
 
