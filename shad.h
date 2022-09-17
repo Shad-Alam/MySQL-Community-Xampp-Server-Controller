@@ -52,4 +52,7 @@ void clear(){
 	system("clear");
 }
 
-
+void apacheController(){
+	system("sudo /etc/init.d/apache2 stop");
+	system("sudo /etc/init.d/mysql stop");
+}

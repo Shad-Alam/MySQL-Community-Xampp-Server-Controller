@@ -13,13 +13,13 @@ int main(){
 		n = j[0]; if(n=='0'){ break;} 
 		
 		if(n=='1'){
-			xamppStoper(), mysqlStarter(), M1;
+			apacheController(),xamppStoper(), mysqlStarter(), M1;
 		}else if(n=='2'){
 			mysqlStoper(), M2;
 		}else if(n=='3'){
-			mysqlStoper(), xamppStarter();
+			apacheController(), mysqlStoper(), xamppStarter();
 		}else if(n=='4'){
-			xamppStoper();
+			apacheController(), xamppStoper();
 		}else if(n=='5'){
 			xamppControlPanel();
 		}else if(n=='c'){
